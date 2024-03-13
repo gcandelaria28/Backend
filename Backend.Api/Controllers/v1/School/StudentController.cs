@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Backend.Api.Controllers.v1.School
 {
-    public class StudenetController : BaseApiController<StudenetController>
+    public class StudentController : BaseApiController<StudentController>
     {
         [HttpGet]
         public async Task<IActionResult> GetAll(int pageNumber, int pageSize)
