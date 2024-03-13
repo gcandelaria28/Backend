@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using Backend.Application.Interfaces.Repositories.School;
+using Backend.Infrastructure.Repositories.School;
 
 namespace Backend.Infrastructure.Extensions
 {
@@ -32,7 +33,7 @@ namespace Backend.Infrastructure.Extensions
             services.AddTransient<ILogRepository, LogRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
-            services.AddTransient<IStudentRepository, IStudentRepository>();
+            services.AddTransient<IStudentRepository, StudentRepository>();
 
             #endregion Repositories
         }
